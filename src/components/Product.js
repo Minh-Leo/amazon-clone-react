@@ -5,7 +5,7 @@ import StarIcon from '@material-ui/icons/Star';
 import { useStateValue } from '../context/StateProvider';
 
 function Product({ id, title, price, rating, image }) {
-  const [dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
 
   const addToBasket = () => {
     dispatch({
